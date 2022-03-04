@@ -20,15 +20,35 @@ export const Global = createGlobalStyle`
     --button-bg: #9e6dc2;
     --white: #fff;
     --light-purple: #fbf6ff;
-    --green: #4fff4b;;
+    --green: #4fff4b;
 
     /* Containers */
     --container: 80rem;
   }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-  input::-ms-reveal,
-  input::-ms-clear {
-    display: none;
+  html {
+    @media (max-width: 1080px) {
+      font-size: 93.75%; //15px
+    }
+
+    @media (max-width: 720px) {
+      font-size: 87.5%; //14px
+    }
+  }
+
+  body {
+    background: var(--light-purple);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button {
+    cursor: pointer;
   }
 `;
 

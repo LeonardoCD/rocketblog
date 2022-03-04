@@ -47,6 +47,10 @@ export const Global = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
+  body, input, textarea, button {
+    font-family: 'Poppins', sans-serif;
+  }
+
   button {
     cursor: pointer;
   }

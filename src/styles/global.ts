@@ -53,6 +53,15 @@ export const Global = createGlobalStyle`
 
   button {
     cursor: pointer;
+    outline: none;
+  }
+
+  input {
+    outline: none;
+  }
+  
+  ul {
+    list-style-type: none;
   }
 `;
 
